@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Furezza - Find Store</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="images/1522049972884.png" type="image/icon type">
+<meta name="description" content="Furezza - The best growing fashion shop in the world so far">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<script type="text/javascript">
+    	if (window.location.protocol == "http:") {
+        	var restOfUrl = window.location.href.substr(5);
+        	window.location = "https:" + restOfUrl;
+    	}
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/info.js"></script>
+	<script type="text/javascript" src="js/location.js"></script>
+</head>
+
+<body onload="information();">
+	<div id="outerContainer">
+		<div id="innerContainer">
+			<div style="position: absolute; top: -80px;">
+				<div id="drive-logo">
+					<span class="docs-drivelogo-img"></span>
+					<span class="docs-drivelogo-text"> urezza</span>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+			<div id="main">
+				<div id="accessDeniedIcon"></div>
+				<p id="accessDeniedHeader">Trouvez votre magasin le plus proche</p>
+				<div id="message">
+					<p>Entrez votre identifiant de produit dans votre magasin le plus proche</p>
+				</div>
+				<p id="buttons" style="padding-top: 10px">
+					<button id="requestButton" style="font-weight:bold" class="jfk-button jfk-button-action" onclick="locate();">Trouvez votre boutique</button>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
